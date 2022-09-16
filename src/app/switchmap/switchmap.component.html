@@ -1,0 +1,11 @@
+
+
+<h2>SwitchMap</h2>
+<p-card styleClass="mb-3">
+<form >
+  <div class="mb-3">Valeurs supérieures à <input pInputText [(ngModel)]="filter" name="filterValue"/></div>
+  <div><a [routerLink]="['/switchmap', filter]">Filtrer avec un paramètre d'URL</a></div>
+</form>
+</p-card>
+
+  <router-outlet></router-outlet>

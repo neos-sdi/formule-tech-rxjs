@@ -1,0 +1,8 @@
+<h2>DistinctUntilChanged</h2>
+<p-card styleClass="mb-3">
+  <button pButton (click)="launch()">Lancer</button>
+</p-card>
+<p-card styleClass="mb-3" *ngIf="result.length">
+  <h3>Résultat</h3>
+  <div *ngFor="let r of result">{{r}}</div>
+</p-card>

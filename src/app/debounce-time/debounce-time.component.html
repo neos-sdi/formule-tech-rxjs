@@ -1,0 +1,23 @@
+<h3>Debounce time</h3>
+<p-card styleClass="mb-3">
+  <form [formGroup]="fg">
+    <input pInputText type="text" formControlName="searchTerm" />
+  </form>
+</p-card>
+<div class="flex">
+  <p-card styleClass="flex-1 mr-3">
+    <div class=" flex flex-column justify-content-center align-items-center">
+      <div>Debounced</div>
+      <div *ngFor="let val of debounced">{{val}}</div>
+    </div>
+
+  </p-card>
+  <p-card styleClass="flex-1">
+    <div class=" flex flex-column justify-content-center align-items-center">
+      <div>Not debounced</div>
+      <div *ngFor="let val of notdebounced">{{val}}</div>
+    </div>
+  </p-card>
+</div>
+
+

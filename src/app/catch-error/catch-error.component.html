@@ -1,0 +1,15 @@
+<p-card styleClass="mt-3">
+<ng-container *ngIf="{word: word$ | async, err: errors$ | async } as vm">
+  <div *ngIf="!vm.err && vm.word as word; else loading">
+
+      <div>{{word}}</div>
+
+  </div>
+  <div *ngIf="vm.err as err">{{err}}</div>
+  <ng-template #loading>
+    <div *ngIf="!vm.err" >
+      <p-skeleton shape="rectangle" height="1.5rem"></p-skeleton>
+    </div>
+  </ng-template>
+</ng-container>
+</p-card>

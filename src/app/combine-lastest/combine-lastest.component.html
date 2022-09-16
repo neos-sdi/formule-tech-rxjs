@@ -1,0 +1,12 @@
+<h2>CombineLatest</h2>
+<p-card styleClass="mb-3">
+  <div>
+    <button pButton (click)="changeTable()">Changer de table</button>
+  </div>
+</p-card>
+<p-card>
+  <h3>Résultats</h3>
+  <div>Table de multiplication x{{table}}</div>
+  <div *ngFor="let r of results">{{r}}</div>
+</p-card>
+

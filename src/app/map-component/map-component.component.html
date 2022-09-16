@@ -1,0 +1,35 @@
+<h2>Map</h2>
+<p-card styleClass="mb-3">
+  <div class="mb-3">Emission de 3 valeures simple: 1, 2 et 3.</div>
+  <button pButton (click)="subscribeSimpleMap()">Map simple</button>
+  <div class="flex mt-3">
+    <div *ngFor="let res of resultSimpleMap" class="mr-2">{{res}}</div>
+  </div>
+</p-card>
+<p-card styleClass="mb-3">
+  <div class="mb-3">Emission d'un tableau de 3 valeurs: [1,2,3]</div>
+  <button pButton (click)="subscribeSimpleArrayMap()">Map simple</button>
+  <div class="flex mt-3">
+    <div *ngFor="let res of resultSimpleMapArray" class="mr-2">{{res}}</div>
+  </div>
+</p-card>
+<p-card styleClass="mb-3">
+  <div class="mb-3">Emission d'un tableau de 3 valeurs: [1,2,3].</div>
+<button pButton (click)="subscribeCorrectSimpleArrayMap()">Map d'un tableau</button>
+<div class="flex mt-3">
+  <div *ngFor="let res of resultCorrectSimpleMapArray" class="mr-2">{{res}}</div>
+</div>
+</p-card>
+<p-card styleClass="mb-3">
+  <div class="mb-3">Emission d'un tableau de 3 valeurs: [1,2,3]. Créé avec la fonction from</div>
+<button pButton (click)="subscribeSimpleFromArrayMap()">Map d'un tableau</button>
+<div class="flex mt-3">
+  <div *ngFor="let res of resultArrayFrom" class="mr-2">{{res}}</div>
+</div>
+</p-card>
+
+
+
+
+
+
